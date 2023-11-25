@@ -125,7 +125,7 @@ def init(): # initiation
         run_game()
         break
       case "2":
-        webbrowser.open("https://connectpolyu-my.sharepoint.com/:w:/g/personal/mtayya_connect_polyu_hk/EbHvOEp0T2xGqP_ZIQWsZ1sBcGYbD8SuxxazcZGwzjpDpg?rtime=jRLh--Hk20g")
+        webbrowser.open("https://github.com/kilmn25/COMP1002-2311855-wasdasdw")
         break
       case "3":
         game_board = game_new()
