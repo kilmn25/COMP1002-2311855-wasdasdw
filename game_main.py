@@ -36,23 +36,26 @@ def run_game(): # call this function to start the game
     game_board[int(player_input["y"])][int(player_input["x"])] = current_player
 
     match game_scan(game_board, turn_number):
-      case 1:
+      case 1: 
+        # print("===================================================")
         display_game(game_board)
         print("===================================================")
-        print("         🏆 THE WINNER IS ⚫ !!! 🏆")
-        print("===================================================")
+        print(f"         🏆 THE WINNER IS ⚫ !!! 🏆\n             Turns taken: {turn_number + 1}")
+        # print("===================================================")
         break
       case 2:
+        print("===================================================")
         display_game(game_board)
         print("===================================================")
-        print("         🏆 THE WINNER IS ⚪ !!! 🏆")
-        print("===================================================")
+        print(f"         🏆 THE WINNER IS ⚪ !!! 🏆\n             Turns taken: {turn_number + 1}")
+        # print("===================================================")
         break
       case 3:
+        print("===================================================")
         display_game(game_board)
         print("===================================================")
         print("         🏆 GAME TIED, NO WINNERS. 🏆")
-        print("===================================================")
+        # print("===================================================")
         break
     
     turn_number += 1
@@ -62,7 +65,7 @@ def run_draw(): # todo ignore this function
   flag_game = True
   while flag_game: # main game loop
     
-    print("===================================================")
+    # print("===================================================")
     display_game(game_board)
 
     current_input = game_input(game_board)
@@ -75,7 +78,7 @@ def run_draw(): # todo ignore this function
     print("===================================================")
     color = ""
     print("Choose a color:\n1 - 🟥\n2 - 🟧\n3 - 🟨\n4 - 🟩\n5 - 🟦\n6 - 🟪\n7 - 🟫\n8 - ⬛\n9 - ⬜")
-    print("exit - go back to main menu")
+    print("exit - return to main menu")
 
     while True:
       print("===================================================")
@@ -126,13 +129,14 @@ def init(): # initiation
         break
       case "2":
         webbrowser.open("https://github.com/kilmn25/COMP1002-2311855-wasdasdw")
-        break
+        print("===================================================")
       case "3":
         game_board = game_new()
         run_draw()
         break
       case _:
         print("⚠ Invalid input! Please input 1 2 or 3 only!")
+        print("===================================================")
 
 init() #start everything
 

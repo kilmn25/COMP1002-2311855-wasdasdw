@@ -7,15 +7,14 @@ def game_new():  # creates empty square table of dimensions game_board_sizexgame
     size_choice = input("💬 Size: ")
     match size_choice:
       case "1": 
-        game_board_size = 15
-        print("===================================================")        
+        game_board_size = 15     
         break
       case "2": 
         game_board_size = 19
-        print("===================================================")
         break
       case _:
         print("⚠ Invalid input! Please input either 1 or 2 only⚠")   
+        print("===================================================")
 
 
   #create game_board after valid game_board size is inputted by user
