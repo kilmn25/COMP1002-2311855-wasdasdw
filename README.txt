@@ -1,1 +1,3 @@
-⚠ run "game_main.py" to start the game
+⚠ USE A TERMINAL WHICH HAS THE ABILITY TO DISPLAY EMOJIS AND OTHER SYMBOLS, SUCH AS THE ONE BUILT INTO VISUAL STUDIO CODE ⚠
+
+run "game_main.py" to start the game
