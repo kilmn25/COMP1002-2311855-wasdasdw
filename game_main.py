@@ -117,6 +117,7 @@ def run_draw(): # todo ignore this function
 def init(): # initiation
   global game_board
   print("===================================================\n                 ♟ GOMOKU GAME♟\n       made by COMP1002-2311855-wasdasdw\n===================================================")
+  print("IMPORTANT: PLEASE RUN THIS GAME THROUGH A TERMINAL WHICH SUPPORTS EMOJIS, SUCH AS THE VS CODE TERMINAL.\nThis game uses emojis to display the game board.\n===================================================")
   print("1 - PLAY GAME")
   print("2 - OPEN GITHUB (source code)")
   print("3 - EXTRA: DRAWING MODE")
@@ -129,6 +130,7 @@ def init(): # initiation
         break
       case "2":
         webbrowser.open("https://github.com/kilmn25/COMP1002-2311855-wasdasdw")
+        print("GitHub repository opened!")
         print("===================================================")
       case "3":
         game_board = game_new()
